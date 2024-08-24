@@ -23,23 +23,27 @@ def display_topics(model, feature_names, no_top_words):
 
 def Topic_distribution():
     topic_distribution = nmf.transform(tf)
-
     topic_distribution_trimmed = topic_distribution[:len(transcript_df)]
 
     transcript_df['dominant_topic'] = topic_distribution_trimmed.argmax(axis=1)
     logical_breaks = []
 
+    # Convert start times to numeric seconds if not already
+    transcript_df['start'] = pd.to_numeric(transcript_df['start'], errors='coerce')
+
     for i in range(1, len(transcript_df)):
         if transcript_df['dominant_topic'].iloc[i] != transcript_df['dominant_topic'].iloc[i - 1]:
             logical_breaks.append(transcript_df['start'].iloc[i])
+
     threshold = 60  
     consolidated_breaks = []
     last_break = None
 
     for break_point in logical_breaks:
-        if last_break is None or break_point - last_break >= threshold:
+        if last_break is None or (break_point - last_break) >= threshold:
             consolidated_breaks.append(break_point)
             last_break = break_point
+
     final_chapters = []
     last_chapter = (consolidated_breaks[0], transcript_df['dominant_topic'][0])
 
@@ -71,17 +75,19 @@ def Topic_distribution():
     st.write("\nFinal Chapter Points with Names:")
     for time, name in zip(chapter_points, chapter_names):
         st.write(f"{time} - {name}")
+import pyautogui
+if st.sidebar.button("Reset"):
+    pyautogui.hotkey("ctrl", "F5")
 
-Choose=st.sidebar.radio("Choose",["display_topics","Time_Final"])
-if Choose=="display_topics":
+Choose = st.sidebar.radio("Choose", ["display_topics", "Time_Final"])
+if Choose == "display_topics":
     topics = display_topics(nmf, tf_feature_names, n_top_words)
     st.write("\nIdentified Topics:")
     for i, topic in enumerate(topics):
         st.write(f"Topic {i + 1}: {topic}")
 
 
+
+
 else:
     Topic_distribution()
-import pyautogui
-if st.sidebar.button("Reset"):
-        pyautogui.hotkey("ctrl","F5")

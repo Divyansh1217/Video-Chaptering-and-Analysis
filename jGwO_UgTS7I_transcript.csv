@@ -1,0 +1,1466 @@
+start,text
+3.14,Welcome to CS229 Machine Learning.
+6.405,"Uh, some of you know that this class has been taught at Stanford for a long time."
+9.925,"And this is often the course that, um,"
+12.48,"I most look forward to teaching each year because this is where we've helped I think,"
+17.08,"several generations of Stanford students become experts in machine learning, go on to build"
+21.565,many of their products and services and startups that I'm
+24.25,"sure many of you are pre- or all of you are using, uh, uh, today."
+28.64,"Um, so what I want to do today was spend some time talking over, uh, logistics,"
+35.19,"and then, uh, spend some time, you know,"
+37.325,"giving you a beginning of a intro,"
+39.25,talk a little bit about machine learning.
+41.875,So about 229.
+45.01,"Um, you know,"
+47.715,"all of you have been reading about AI in the news,"
+50.78,"uh, about machine learning in the news."
+52.94,"Um, and you probably heard me or others say, AI is the new electricity."
+58.5,"Uh, the emergence and rise of electricity about 100 years ago,"
+61.37,it transformed every major industry.
+63.38,I think AI already we call machine learning for the rest of the world seems to call AI.
+67.79,[NOISE]
+68.81,"Um, machine learning and,"
+71.105,and AI and deep learning will change the world.
+73.805,"And I hope that through 229,"
+75.884,we'll give you the tools you need so that you can be many of
+79.07,"these future titans of industries that you can be one to go out and build,"
+83.365,"you know, help the large tech companies do the amazing things they do,"
+87.05,"or build your own start-up,"
+88.534,or go into some other industry.
+90.065,"Go, go transform healthcare or go"
+91.94,transform transportation or go build a self-driving car.
+94.55,"Um, and do all of these things that,"
+97.145,"um, after this class,"
+98.85,I think you'll be able to do.
+100.26,"You know, um, the majority of students supplying- the,"
+105.315,the demand for AI skills- the demand for machine learning skills is so vast.
+108.86,I think you all know that.
+110.015,"Um, and I think it's because machine learning has advanced"
+113.66,"so rapidly in the last few years that there are so many opportunities,"
+117.71,"um, to apply the learning algorithms, right?"
+120.15,Both in industry as well as in academia.
+122.18,"I think today, we have, um,"
+124.175,the English department professors trying to
+126.35,apply learning algorithms to understand history better.
+128.915,"Uh, we have lawyers trying to apply machine learning into"
+131.99,"process legal documents and off-campus, every company,"
+135.62,both the tech companies as well as lots of
+137.57,"other companies that you wouldn't consider tech companies,"
+139.94,"everything from manufacturing companies, to healthcare companies,"
+142.58,to logistics companies are also trying to apply machine learning.
+146.795,"So I think that, um, uh, uh,"
+150.1,"if you look at it on a- on a factual basis,"
+153.445,the number of people doing
+155.69,very valuable machine learning projects today is much greater than it was six months ago.
+159.8,And six months ago is much greater than it was 12 months ago.
+162.43,"And the amount of value,"
+164.24,"the amount of exciting meaningful work being done in machine learning is,"
+167.255,"is, is very strongly going up."
+170.365,"Um, and I think that given the rise of, you know, the,"
+176.01,"the amounts of data we have as well as the new machine learning tools that we have,"
+180.71,"um, it will be a long time before we run out of opportunities."
+184.715,"You know, before, before society as"
+186.56,a whole has enough people with the machine learning skill set.
+189.695,"Um, so just as maybe, I don't know,"
+192.87,20 years ago was a good time to start working on this Internet thing and
+197.0,all people that started working on the Internet like 20 years ago have fantastic careers.
+202.115,"I think today is a wonderful time to jump into machine learning, uh, and, and,"
+207.435,and the number of- and the opportunities for you to
+210.23,"do unique things that no one has- no one else is doing, right?"
+214.02,The opportunity for you to go to a logistics company and
+216.65,"find that exciting way to apply machine learning, uh,"
+219.77,will be very high because chances are
+222.875,that logistic company has no one else even working on this.
+226.075,"Because, you know, they probably can't- they,"
+228.15,"they may not be able to hire a fantastic Stanford student that's a graduate of CS229, right?"
+232.19,Because there just aren't a lot of CS229 graduates around.
+234.875,"Um, so what I want to do today is,"
+239.205,"um, do a quick intro talking about logistics."
+242.495,"Um, and then uh, we'll,"
+245.07,"we'll spend the second half of the day, you know,"
+246.78,"giving an overview and,"
+247.83,and talk a little bit more about machine learning.
+250.315,"Okay? And uh- oh, and I apologize."
+252.75,"I- I think that, uh, this room,"
+254.385,"according to that sign there, seats,"
+256.32,"what, 300 and something students."
+258.39,"Uh, I think- we have, uh,"
+260.72,"uh, like not quite 800 people enrolled in this class."
+264.23,"[LAUGHTER] Uh, so there are people outside, and,"
+267.4,"and all of the classes,"
+268.96,"uh, are recorded and broadcast in SCPD."
+271.44,"Uh, they usually- the videos are usually made available the same day."
+274.93,"So for those who they can't get into the room, my apologies."
+278.11,"Um, the- there were some years, um,"
+280.74,where even I had trouble getting into the room but I'm glad [LAUGHTER] they let me in.
+284.465,"But, but I'm- but, but hopefully, you can watch."
+287.045,"You, you can watch all of these things online shortly."
+289.26,[inaudible].
+291.0,"Oh, I see. Yes. Yeah. [LAUGHTER] I don't know,"
+294.15,it's a bit complicated.
+295.65,[LAUGHTER] Yeah. Thank you.
+297.965,"I think it's okay. Yeah. I- I- okay, yeah."
+300.485,Yeah. Maybe for the next few classes you can squeeze in and use the NTC.
+304.58,"So for now, it might be too complicated."
+307.24,"Okay. So quick intros, um,"
+310.52,"uh, I'm sorry, I should have introduced myself. My name is Andrew Ng."
+313.29,"[LAUGHTER] Uh, uh, uh, and I wanted to introduce"
+317.09,some of the rest of the teaching team as well.
+321.71,There's a class coordinator.
+324.315,"Um, she has been playing this role for many years now and helps"
+328.505,keep the trains run on time and make sure that everything in
+330.86,class happens when it's supposed to.
+333.17,"Uh, uh, so, so, so should be uh- and then, uh,"
+336.275,we're thrilled to have-
+339.0,Do you guys want to stand up?
+340.37,"Uh, we have the co-head TAs,"
+342.23,"uh, respectively are PhD students working with me."
+346.845,"Uh, and so bringing a lot of, um, uh,"
+350.4,"technical experience, uh, technical experience in"
+353.9,machine learning as well as practical know-how on how to actually make these things work.
+357.785,"And with the large class that we have,"
+360.11,we have a large TA team.
+361.805,"Um, maybe I won't introduce all of the TAs here today"
+364.49,but you'll meet many of them throughout this course here.
+366.65,"But the TAs expertise span everything from computer vision and natural language processing,"
+370.94,"to computational biology, to robotics."
+373.23,"And so, um, through this quarter,"
+375.6,"as you work on your class projects,"
+377.25,"I hope that you get a lot of, uh,"
+379.13,"help and advice and mentoring from the TAs, uh,"
+381.905,all of which- all of whom have deep expertise not just in
+384.68,"machine learning but often in a specific vertical application area,"
+388.68,"um, of machine learning."
+389.865,"So depending on what your projects,"
+391.11,"we tried to match you to a TA that can give you advice, um, eh,"
+394.92,"the most relevant, uh,"
+396.435,whatever project you end up working on.
+399.585,"Um, so yeah, goal of this class,"
+402.73,"I hope that after the next 10 weeks,"
+405.455,"uh, you will be an expert in machine learning."
+408.575,"Um, it turns out that, uh,"
+412.2,"uh, you know, um,"
+414.06,"and- and I hope that after this class,"
+415.95,"you'll be able to go out and build very meaningful machine learning applications,"
+421.59,"uh, either in an academic setting where, uh,"
+424.47,"hopefully you can apply it to your problems in mechanical engineering,"
+428.045,"electrical engineering, and, uh, English,"
+430.205,"and law and, um, uh,"
+432.8,"and- and- and education and all of this wonderful work that happens on campus,"
+436.64,"uh, as well as after you graduate from Stanford"
+438.86,to be able to apply it to whatever jobs you find.
+441.38,"Um, one of the things I find very exciting about machine learning is that it's no"
+445.61,"longer a sort of pure tech company only kind of thing, right?"
+450.305,"I think that many years ago,"
+452.545,"um, machine learning, it was like a thing that, you know,"
+455.75,the computer science department would do and that
+458.06,the elite AI companies like Google and Facebook and Baidu and Microsoft would do.
+462.65,"Uh, but now, it is so pervasive that even companies that are"
+466.85,"not traditional because there are tech companies see a huge need to apply these tools,"
+471.02,"and I find a lot of the most exciting work, uh, these days."
+474.335,"Um, and, and, and maybe some of you guys know my history some would be biased, right?"
+477.545,I- I led the Google Brain team which helped Google transform
+480.86,"from what was already a great company 10 years ago to today which is,"
+484.33,"you know, a great AI company."
+485.76,"And then I also led the AI group at Baidu,"
+488.27,"and, you know, led the company's technology strategy to help Baidu."
+491.63,"Also, it transformed from what was already a great company"
+494.72,many years ago to today arguably China's greatest AI company.
+498.71,"So having led the, you know,"
+500.61,"built the teams that led the AI transformations of two large tech companies,"
+504.765,"I, I, I feel like that's a great thing to do."
+507.765,"Uh, but even beyond tech, I think that, um,"
+509.995,"there's a lot of exciting work to do as well to help other industries,"
+513.02,"to help other sectors, uh,"
+514.92,embrace machine learning and use these tools effectively.
+517.905,"Um, but after this class,"
+520.16,I hope that each one of you will be well qualified to
+523.475,"get a job at a shiny tech company and do machine learning there,"
+526.89,or go into one of these other industries and do
+529.16,very valuable machine learning projects there.
+531.835,"Um, and in addition,"
+534.03,"if any of you, um,"
+536.205,"are taking this class with the primary goal of, uh,"
+539.785,"being able to do research,"
+541.295,"uh, in machine learning,"
+542.595,"so, so, actua- so some of you I know are PhD students."
+546.39,"Um, I hope that this class will also leave you well-equipped to,"
+549.91,"um, be able to read and understand research papers, uh,"
+553.225,"as well as, uh, you know,"
+554.975,"be qualified to start pushing forward,"
+557.18,"um, the state of the art, right."
+560.73,"Um, so let's see."
+564.75,"Um, so today, uh,"
+569.13,"so, so just as machine learning is evolving rapidly, um,"
+572.825,"the whole teaching team,"
+574.175,we've been constantly updating CS229 as well.
+578.03,"So, um, it's actually very interesting."
+579.995,"I feel like the pace of progress in machine learning has accelerated,"
+582.77,"so it, it actually feels like that,"
+585.02,"uh, the amounts we changed the class year over year has been increasing over time."
+590.225,"So- so for your friends who took the class last year, you know,"
+593.06,things are a little bit different this year because
+595.19,"we're, we're constantly updating the class"
+597.35,to keep up with what feels like still
+599.45,accelerating progress in the whole field of machine learning.
+602.12,"Um, so, so, so, so there are some logistical changes."
+606.17,"For example, uh, uh, we've gone from- uh,"
+608.435,"what we used to hand out paper copies of handouts,"
+611.6,"uh, that we're, we're trying to make this class digital only."
+614.18,"Uh, but let me talk a little bit about, uh,"
+616.355,"prerequisites as well as in case your friends have taken this class before,"
+619.46,"some of the differences for this year, right?"
+622.575,"Um, so prerequisites."
+624.84,"Um, we are going to assume that,"
+628.46,"um, all of you have a knowledge of basic computer skills and principles."
+633.05,"Uh, so, you know, Big O notation,"
+634.88,"queues, stacks, binary trees."
+636.605,"Hopefully, you understand what all of those concepts are."
+639.44,"And, uh, assume that all of you have a basic familiarity with,"
+643.155,"um, uh, probability, right?"
+645.465,"Hopefully, you know what's a random variable,"
+647.52,"what's the expected value of a random variable,"
+649.79,what's the variance of a random variable.
+651.695,"Um, and if- for some of you,"
+653.495,"maybe especially the SCPD students taking this remotely,"
+656.72,"it has been, you know,"
+657.92,some number of years since you last had a probability and statistics class.
+661.13,"Uh, we will have review sessions, uh,"
+664.19,"on, on, on Fridays, uh,"
+665.54,where we'll go over some of this prerequisite material as well. But it's okay.
+669.095,"Hopefully, you know what a random variable is,"
+670.82,what expected value is.
+671.87,"But if you're a little bit fuzzy on those concepts,"
+674.21,"we'll go over them again,"
+675.77,"um, at a- at a discussion section, uh, on Friday."
+679.47,"Also, seem to be familiar with basic linear algebra."
+682.22,"So hopefully that you know what's a matrix,"
+684.125,"what's a vector, how to multiply two matrices and multiplying matrices and a vector."
+688.01,"Um, if you know what an eigenvector then that's even better."
+692.05,"Uh, if you're not quite sure what an eigenvector is,"
+694.19,"we'll go over it that- that you, you, you better-"
+696.48,"uh, yeah, we'll, we'll, we'll go over it I guess."
+700.11,"And then, um, a large part of this class, uh, uh, is,"
+707.5,"um, having you practice these ideas through the homeworks,"
+711.729,"uh, as well as I mention later a, uh, open-ended project."
+715.69,"And so, um, one,"
+718.0,"uh, there are- we've actually, uh,"
+719.905,"until now we used to use uh MATLAB,"
+722.605,"uh and Octave for the programming assignments, uh,"
+725.305,"but this year, we're trying to shift the programming assignments to, uh,"
+728.65,"Python, um, and so,"
+730.525,"um, I think for a long time, uh,"
+732.52,"even today, you know,"
+734.005,"I sometimes use Octave to prototype because the syntax in Octave is so nice and just run,"
+739.405,"you know, very simple experiments very quickly."
+741.625,"But I think the machine learning world, um, is,"
+744.475,"you know, really migrating I think from a"
+748.03,"MATLAB Python world to increasing- excuse me,"
+750.79,MATLAB Octave world to increasingly a Python
+754.675,"maybe and- and then eventually for production Java or C++, kind of world."
+758.77,"And so, uh, we're rewriting a lot of the assignments"
+764.32,for this class this school year.
+764.358,"Having, having driving that process,"
+766.194,"uh, so that- so that this course,"
+768.13,"uh, you could do more of the assignments."
+770.305,"Uh, uh, maybe most- maybe all of the assignments in,"
+772.87,"um, Python, uh, NumPy instead."
+776.05,"Um, now, a note on the honor codes,"
+779.125,"um, we ask that, you know,"
+781.06,"we, we actually encourage you to form study groups."
+783.385,"Uh, so, so you know I've been um, fascinated by education, a long time."
+788.71,I spent a long time studying education and pedagogy and how instructors
+792.19,like us can help support youth to learn more efficiently.
+795.79,And one of the lessons I've learned from
+797.35,"the educational research literature is that the highly technical classes like this,"
+801.925,"if you form study groups, uh,"
+803.95,"you will probably have an easier time, right?"
+806.38,"So, so CS229, we go for the highly technical material."
+809.32,"There's a lot of math, some of the problems are hard and if you have"
+811.78,"a group of friends to study with, uh,"
+814.45,"you probably have an easier time uh, uh,"
+816.625,because you can now ask each other questions and work together and help each other.
+819.625,"Um, where we ask you to draw the line or what we ask"
+823.0,"you to, to, to do relative to Stanford's,"
+826.33,"uh, Honor Code is, um,"
+828.115,"we ask that you do the homework problems by yourself, right?"
+831.58,"Uh, and, and, and most specifically, um,"
+834.1,"it's okay to discuss the homework problems with friends,"
+836.395,"but if you, um,"
+838.03,"but after discussing homework problems with friends,"
+839.98,"we ask you to go back and write out the solutions by yourself, uh,"
+843.82,"without referring to notes that,"
+845.665,"you know, you and your friends had developed together, okay?"
+848.38,"Um, the class's honor code is written clearly"
+851.845,on the class handouts posted digitally on the website.
+855.58,So if you ever have any questions about what
+858.13,"is allowed collaboration and what isn't allowed, uh,"
+860.59,please refer to that written document on
+862.51,"the course website where we describe this more clearly, but,"
+865.615,"um, out of respect for the Stanford honor code as well as for,"
+869.5,"uh, uh, you know,"
+870.985,"for, for, for students kind of doing their own work,"
+873.4,"we asked you to basically do your own work, uh,"
+875.74,"for the- it's okay to discuss it,"
+878.17,"but after discussing homework problems with friends, ultimately,"
+880.81,we ask you to write up your problems by yourself so that
+883.645,"the homework submissions reflect your own work, right?"
+887.47,"Um, and I care about this because it turns out that having CS 229,"
+892.42,"you know, CS 229 is one of those classes that employers recognize."
+896.02,"Uh- uh, I don't know if you guys know,"
+897.79,"but there have been, um,"
+899.38,"companies that have put up job ads that say stuff like,"
+902.815,"""So long as you've got- so long as you completed"
+905.32,"CS 229 we guarantee you get an interview,"" right?"
+908.08,[LAUGHTER] I've- I've seen stuff like that.
+909.55,"And so I think you know in order to, to maintain"
+913.0,"that sanctity of what it means to be a CS 229 completer,"
+916.27,"I think, um, and I'll ask all of you so that- really do your homework."
+920.56,"Um, or stay within the bounds of acceptable,"
+922.795,acceptable collaboration relative to the honor code.
+926.545,"Um, let's see."
+929.02,"And I think that um, uh,"
+930.655,"if- uh, you know what?"
+934.09,"This is, um, [NOISE] yeah."
+936.715,"And I think that, uh,"
+938.125,"one of the best parts of CS 229,"
+941.215,"it turns out is, um, excuse me."
+946.03,"So I'm trying, sorry, I'm going to try looking for my mouse cursor."
+966.0,"Uh, all right. Sorry about that."
+971.23,My- my- my displays are not mirrored.
+974.065,So this is a little bit awkward.
+981.72,"Um, so one of the best parts of the class is- oh,"
+989.965,shoot. Sorry about that.
+991.21,[LAUGHTER]
+993.91,"All right, never mind. I won't do this."
+996.125,"Um, you could do, you could do it yourself online later."
+999.535,"Um, yeah, I started"
+1003.78,using- I started using Firefox recently in addition to Chrome here. It's a mix up.
+1009.255,"Um, one of the best parts of, um,"
+1012.345,"the class is, um, the class project."
+1017.055,"Um, and so, you know,"
+1018.9,one of the goals of the class is to leave you
+1020.55,well-qualified to do a meaningful machine learning project.
+1023.745,"And so, uh, one of the best ways to make sure you have that skill set"
+1028.29,is through this class and hopefully with the help of some of our TAs.
+1032.25,"Uh, we wanna support you to work on"
+1035.04,a small group to complete a meaningful machine learning project.
+1039.33,"Um, and so one thing I hope you start doing, you know,"
+1042.105,"later today, uh, is to start brainstorming maybe with your friends."
+1046.59,"Um, some of the- some of the class projects you might work on."
+1050.265,"Uh, and the most common class project that, you know,"
+1053.55,people do in CS 229 is to pick an area or pick an application that excites you and
+1059.22,to apply machine learning to it and see if you can
+1061.71,build a good machine learning system for some application area.
+1065.04,"And so, um, if you go to the course website, you know,"
+1067.77,"cs229.stanford.edu and look at previous year's projects,"
+1071.64,"you ha- you, you see machine learning projects applied to pretty much,"
+1074.49,"you know, pretty much every imaginable application under the sun."
+1078.3,"Everything from I don't know,"
+1079.965,"diagnosing cancer to creating art to, uh,"
+1083.28,"lots of, um, uh, projects applied to other areas of engineering, uh,"
+1087.48,"applying to application areas in EE,"
+1089.58,"or Mechanical engineering, or Civil engineering,"
+1091.17,"or Earthquake engineering, and so on, uh,"
+1093.15,"to applying it to understand literature,"
+1095.31,"to applying it to um, uh, I don't know."
+1098.16,"And, and, and, and, and so, uh,"
+1099.72,if you look at the previous year's projects
+1102.525,of many of which are posted on the course website.
+1104.91,"You could use that as inspiration to see the types of projects students complete,"
+1108.9,"completing this class are able to do and also encourage you to, um, uh,"
+1113.445,you can look at that for inspiration to get
+1116.16,a sense of what you'll be able to do at the end-
+1118.2,conclusion of this class and also see if looking at
+1121.77,"previous year's projects gives you inspiration for what,"
+1125.34,"um, you might do yourself."
+1127.5,"Uh, so we asked you to- we, we invite you I guess to"
+1130.68,"do class projects in small groups and so, um,"
+1134.07,"after class today, also encourage you to start"
+1136.68,making friends in the class both for the purpose of forming
+1139.29,study groups as well as with the purpose of maybe finding
+1141.765,a small group to do a class project with.
+1144.66,"Um, uh, we asked you to form project groups of,"
+1148.44,"um, up to size three."
+1149.85,"Uh, uh, most project groups end up being size two or three."
+1153.645,"Um, if you insist on doing it by yourself,"
+1155.895,right without any partners that's actually okay too.
+1157.86,You're welcome to do that.
+1159.045,"But, uh, but- but I think often, you know,"
+1161.565,having one or two others to work with may give you an easier time.
+1164.595,"And for projects of exceptional scope,"
+1167.055,"if you have a very very large project,"
+1168.54,that just cannot be done by three people.
+1170.445,"Um, uh, sometimes, you know,"
+1172.275,"let us know and we're open to- with, with to some project groups of size four,"
+1178.23,"but our expectation- but we do hold projects, you know,"
+1181.86,"with a group of four to a higher standard than projects with size one to three, okay."
+1186.615,"So- so what that means is that if your project team size is one,"
+1190.44,"two or three persons,"
+1191.58,the grading is one criteria.
+1193.5,"If your project group is bigger than three persons,"
+1196.17,we use a stricter criteria when it comes to grading class projects.
+1200.34,"Okay. Um, and that, that reminds me um,"
+1204.795,"uh, I know that uh- let's see."
+1206.82,So for most of you since this- since this
+1208.92,"started 9:30 AM on the first day of the quarter,"
+1211.32,"uh, for many of you,"
+1212.73,this may be- this may be your very first class at Stanford.
+1215.955,"How many of you, this is your very first class at Stanford?"
+1218.865,Wow. Cool. Okay. Awesome. Great. Welcome to Stanford.
+1221.82,[LAUGHTER]
+1222.03,"Uh, and if someone next to"
+1224.46,"you just raise their hand- uh actually, rai- raise your hand again."
+1227.31,"So I hope that, you know, maybe after class today,"
+1229.26,"if someone next to you raised a hand, uh,"
+1231.24,"help welcome them to Stanford, and"
+1233.4,"then, say hi and introduce yourself and make friends on the way."
+1235.785,"Yeah. Cool. Nice, nice to see so many of you here."
+1238.71,Um.
+1240.0,[NOISE]
+1244.97,"All right. So um,"
+1249.4,"just a bit more on logistics, uh-"
+1252.58,"So, um, let's see,"
+1257.175,"in addition to the main lectures that we'll have here,"
+1260.88,"uh, on Mondays and Wednesdays,"
+1263.04,"um, CS229 also has discussion sections, uh,"
+1266.58,"on- held on Fridays that are- and everything we do including the- all the,"
+1270.84,"all the lectures and discussion sections are recorded and broadcast through SCPD,"
+1275.505,"uh, through the online websites."
+1277.26,"Um, and one of- and,"
+1280.2,"uh, discussion sections are taught,"
+1282.78,"uh, usually by the TAs on Fridays and attendance at discussion sections is optional."
+1288.45,"Uh, and what I mean is that, um, you- you know,"
+1291.39,"you- 100% promise,"
+1292.83,there won't be material on the midterm that will sneak in from this kind of section.
+1296.85,So it's 100% optional.
+1298.17,"Uh, and you will be able to do all the homework and"
+1300.51,the projects without attending the discussion section.
+1303.15,"But what we'll use the discussion section for,"
+1305.245,"uh, for the first three discussion sections."
+1307.47,"So, you know, this week, next week, uh, the week after that,"
+1309.975,we'll use the discussion sections to go over prerequisite material in greater depth.
+1314.085,"So, uh, go over, uh,"
+1315.9,"linear algebra, basic probability statistics,"
+1318.3,teach a little bit about Python NumPy in
+1320.58,case you're less familiar with those frameworks.
+1323.055,"Uh, so we'll do that for the first few weeks."
+1325.05,"And then for the discussion sections that are held later this quarter,"
+1328.725,we'll usually use them to go over more advanced optional material.
+1333.045,"Uh, for example, um,"
+1334.8,"CS229, most of the learning algorithms,"
+1336.72,"you- you hear about in a class rely on convex optimization algorithms,"
+1341.505,but we want to focus the class on
+1344.055,the learning algorithms and spend less time on convex optimization.
+1347.67,So you want to come and hear about more advanced concepts in convex optimization.
+1351.84,We'll defer that to the discussion section.
+1354.24,"Uh, and then, there, there are few other advanced topics,"
+1357.33,"uh, Hidden Markov Models, time series,"
+1359.31,"uh, that we're planning to defer to the,"
+1362.58,"um, Friday discussion sections."
+1365.475,"Okay. Um, so, uh, let's see."
+1371.67,"Um, cool, and, uh, and,"
+1374.55,"um, a final bit of logistics, um, uh,"
+1379.575,"for- there are digital tools that some of you have seen, but, um,"
+1384.18,"for this class, we'll drive a lot of the discussion through the,"
+1387.72,"uh, online website Piazza."
+1389.325,"How- how many of you have used Piazza before? Okay, cool, mostly."
+1392.685,"Wow, all of you?"
+1393.81,"That's very amazing. Uh, good."
+1396.255,"So, so, uh, online discussion board"
+1398.82,"for those of you that haven't seen it before, but, um,"
+1401.1,I definitely encourage you to participate actively
+1404.51,on Piazza and also to answer other student's questions.
+1408.13,"I think that one of the best ways to learn as well as contribute, you know,"
+1412.17,"back to the class as a whole is if you see someone else ask a question on Piazza,"
+1416.265,"if you jump in and help answer that, uh,"
+1418.68,"that, that often helps you and helps your classmates."
+1421.65,I strongly encourage you to do that.
+1424.605,"For those of you that have a private question,"
+1427.245,"you know, sometimes we have students, um, uh,"
+1429.915,"reaching out to us to- with a personal matter or something that, you know,"
+1435.42,is not appropriate to share in a public forum in which case you're welcome
+1438.36,to email us at the class email address as well.
+1441.555,"Uh, and we answer in, in the class email address- the cla-"
+1444.625,"teaching staff's email address on the course website,"
+1446.46,you can find it there and contact us.
+1448.035,"But for anything technical,"
+1449.97,"anything reasonable to share with the class, uh,"
+1452.64,"which includes most technical questions and most logistical questions, right?"
+1456.72,"Questions like, you know,"
+1458.01,"can you confirm what date is midterm,"
+1459.72,"or, or, you know, what happens?"
+1461.685,"Uh, can you confirm when is the handout for this going out and so on?"
+1465.195,"For questions that are not personal or private in nature,"
+1468.0,"I strongly encourage you to post on Piazza rather than emailing us because statistically,"
+1473.055,"you actually get a faster answer, uh,"
+1475.02,"posting it on- post- posting on Piazza than- than, you know,"
+1478.395,"if you wait for one of us to respond to you, um,"
+1481.41,"and we'll be using Gradescope as well,"
+1483.195,"um, to- for, for online grading."
+1485.91,"And then, if, if you don't know what Gradescope is, don't worry about it."
+1488.67,"We'll, we'll, we'll send you links and show you how to use it later."
+1493.305,"Um, oh, and, uh, again,"
+1496.08,"relative to- one last logistical thing to plan for, um,"
+1500.37,"unlike previous, um, uh,"
+1503.76,"years where we taught CS229,"
+1506.385,"uh, so we're constantly updating the syllabus, right?"
+1508.44,"The technical content to try to show you the latest machine learning algorithms, uh,"
+1512.55,"and the two big logistical changes we're making this year,"
+1516.54,"I guess one is, uh,"
+1517.725,"Python instead of MATLAB,"
+1519.225,"and the other one is, um,"
+1521.31,"instead of having a midterm exam, you know,"
+1525.005,"there's a timed midterm, uh,"
+1526.85,"we're planning to have a take-home midterm, uh, this course, instead."
+1531.2,"So I, I know some people just breathed in sharply when I said that."
+1536.055,[LAUGHTER] I don't know what that means.
+1537.15,[LAUGHTER] Was that shock or happiness? I don't know.
+1540.06,"Okay. Don't worry, midterms are fun."
+1541.95,"You- you'll, you'll love it."
+1543.21,[LAUGHTER]
+1545.94,All right.
+1547.065,So that's it for the- that's it for the logistical aspects.
+1554.16,"Um, let me check with the- so let- let me check if there are any questions."
+1562.0,"Oh, yeah, go ahead."
+1563.64,"On campus, are those courses offered every quarter [inaudible]."
+1575.37,"Yeah. So that's interesting. Uh, let's see."
+1578.19,I think it's offered in spring.
+1580.77,"And one other person. Oh, yes, is teaching it."
+1585.225,So someone else is teaching it in spring quarter.
+1587.88,"Um, uh, I actually did not know it was gonna be offered in winter."
+1594.45,[inaudible]
+1595.0,Yeah.
+1596.0,[inaudible].
+1598.63,"Yeah, right, yeah. So- so I think a free guide and teaching it in- sorry,"
+1607.77,"in their [inaudible] and you are right, are teaching it in, uh,"
+1610.47,"spring, uh, and I don't think it is offered in winter."
+1613.68,[inaudible].
+1618.87,"Will the session be recorded? Yes, they will be."
+1620.955,"Oh, and by the way, if, if, if you wonder"
+1623.13,"why I'm recording that I'm repeating the question,"
+1625.575,"I know it feels weird, I'm recording with a microphone,"
+1627.6,so that- so that people watching this at home can hear the question.
+1630.57,"But, uh, both the lectures and the discussion sections,"
+1633.72,"uh, will be- will be recorded and put on the website."
+1637.335,"Uh, maybe the one thing we do that's not"
+1639.78,recorded and broadcast are the office hours. Great. Isn't that right?
+1642.87,[LAUGHTER]
+1644.25,"Oh, oh, but,"
+1644.82,"uh, I think, uh, this year,"
+1646.11,"uh, we have a 60-hour, how many hour?"
+1649.38,"Well, 60 office hours."
+1650.505,"Uh, 60 office hours per week. Right, yeah."
+1653.31,"[LAUGHTER] So- so- so hopefully,"
+1655.2,"I- I just again,"
+1656.505,we- we're constantly trying to improve the course.
+1658.26,"In previous years, one of the feedback we got"
+1660.06,was that the office hours were really crowded.
+1662.22,"So- so we have 60 hour- 60 hours,"
+1664.44,about 60 office hour slots per week this year. That- that seems like a lot.
+1668.37,"So hopefully, if you need to track down one of us,"
+1670.83,"track down a TA to get help, hopefully,"
+1672.69,that- that'll make it easier for you to do so. Go ahead.
+1674.91,[inaudible].
+1678.78,Say that again. Well-
+1681.0,[inaudible].
+1685.83,"Oh, well logistical things like when homeworks are due, would be covered in lectures."
+1689.46,"Uh, we have uh, yes,"
+1691.425,"so we have uh, four planned homeworks. Oh sorry."
+1694.26,[inaudible]
+1696.33,"Yeah, and if you go to the- if you go to"
+1698.01,"the course website and you click on the syllabus link uh,"
+1700.905,that has a calendar with when each homework assignments go out and when they'll be due.
+1705.72,"Uh, so four homeworks and uh,"
+1708.03,"project proposals due a few weeks from now and uh,"
+1711.15,final projects due at the end of the quarter.
+1713.82,"But all the, all the exact days are listed on the course website I think."
+1717.9,[inaudible]
+1722.13,"Uh, sure yes, difference between this class and 229a."
+1726.0,"Um, let me think how to answer that."
+1728.835,"Yes. Uh, so yeah I know,"
+1731.325,I was debating earlier this morning how to
+1733.26,answer that because I've been asked that a few times.
+1736.2,"Um, so I think that what has happened at Stanford is that"
+1740.61,"the volume of demand for machine learning education is just,"
+1744.63,"right skyrocketing because anything everyone sees,"
+1747.24,"everyone wants to learn this stuff and so um,"
+1749.85,"uh, so within- so"
+1752.96,the computer science department has been trying to grow
+1754.94,the number of machine learning offerings we have.
+1757.28,"Um, uh, we actually kept the enrollments to"
+1760.82,CS229a at a relatively low number at 100 students.
+1764.88,"So I actually don't want to encourage too many of you to sign up because uh,"
+1768.585,"I think we might be hitting the enrollment cap already so,"
+1771.765,"so please don't all sign up for CS229a because um,"
+1775.65,"we- CS229a, does not have the capacity this quarter but since CS229a is uh, um,"
+1781.98,"much less mathematical and much more applied,"
+1785.49,"uh, uh, a relatively more applied version of machine learning and uh,"
+1791.115,"so I, I guess I'm teaching CS229a and CS230 and CS229, this quarter."
+1795.75,"Of the three, CS229,"
+1797.37,is the most mathematical.
+1799.35,"Um, it is a little bit less applied than"
+1802.11,CS229a which is more applied machine learning and CS230 which is deep learning.
+1806.55,"My advice to students is that um,"
+1808.905,"CS229, uh, CS229a,"
+1811.38,"excuse me, let me write this down."
+1813.645,I think I'm-
+1814.83,"so CS229a, uh,"
+1823.55,"is taught in a flipped classroom format which means that, uh,"
+1826.82,"since taking it, we'll mainly watch videos um,"
+1830.525,"on the Coursera website and do a lot of uh,"
+1833.135,"programming exercises and then, meet for weekly discussion sections."
+1837.395,"Uh, but there's a smaller class with [inaudible] ."
+1840.74,"Um, I, I would advise you that um,"
+1843.47,"if you feel ready for CS229 and CS230 to do those uh, but CS229,"
+1850.45,"you know, because of the math we do, this is a,"
+1853.575,"this is a very heavy workload and pretty challenging class and so,"
+1858.0,"if you're not sure you're ready for CS229 and CS229a,"
+1861.9,"it may be a good thing to,"
+1864.0,"to, to take first, uh,"
+1866.58,"and then uh, CS229, CS229a"
+1870.63,"cover a broader range of machine learning algorithms uh,"
+1874.89,"and CS230 is more focused on deep learning algorithms specifically, right."
+1879.06,"Which is a much narrow set of algorithms but it is,"
+1881.49,"you know, one of the hardest areas of deep learning."
+1884.265,"Uh, there is not that much overlap in content between the three classes."
+1888.72,"So if you actually take all three,"
+1890.52,"you'll learn relatively different things from all of them uh, in the past,"
+1894.15,we've had students simultaneously take 229 and 229a and there is a little bit of overlap.
+1899.685,"You know, they, they do kind of cover"
+1901.245,related algorithms but from different points of view.
+1903.93,"So, so some people actually take multiple of these courses at the same time."
+1907.89,"Uh, but 229a is more applied, a bit more,"
+1911.385,"you know practical know-how hands-on and so on and,"
+1914.07,"and uh, much less mathematical."
+1917.34,"Uh, and, and CS230 is also less"
+1920.88,"mathematical more applied more about kind of getting it to work where CS229a,"
+1925.125,"um, we do much more mathematical derivations in CS229."
+1930.59,"Cool, any questions? Yes, someone had their hand up."
+1936.51,[inaudible]
+1943.56,"So uh, once you say that what- I would"
+1948.285,"generally prefer students not do that in the interest of time but what, what do you want?"
+1953.16,[inaudible]
+1957.57,"Oh, I see, sure go for it."
+1959.175,Who is enrolled in 229 and 230?
+1961.605,"Oh not that many of you, interesting."
+1964.62,"Oh, that's actually interesting."
+1966.6,"Cool. Yeah. Thank you, yeah, I just didn't want to set"
+1969.54,the presence of students using this as a forum to run surveys.
+1972.48,[LAUGHTER]
+1972.58,"That was, that was, that was,"
+1974.16,that that was an interesting question.
+1975.27,So thank you.
+1975.87,[LAUGHTER]
+1978.66,"Um, cool."
+1980.805,"All right, and, and by the way I think uh, you know,"
+1984.075,just one thing about Stanford is the
+1986.97,"AI world and machine learning world,"
+1988.725,AI is bigger than machine learning right
+1990.0,and machine learning is bigger than deep learning.
+1991.62,"Um, one of the great things about being a Stanford student is,"
+1995.085,"you can and I think should take multiple classes, right."
+1999.435,"I think that your CS229,"
+2001.28,has for many years been the core of the machine learning world at Stanford.
+2004.985,"Uh, but even beyond CS229,"
+2008.12,it's worth your while to take multiple classes and getting multiple perspectives.
+2012.14,"So, so if you want to uh,"
+2014.585,"be really effective, you know,"
+2016.28,"after you graduate from Stanford,"
+2017.435,you do wanna be an expert in machine learning.
+2019.04,You do wanna be an expert in deep learning.
+2021.155,"Uh, and you probably wanna know probability statistics."
+2023.855,"Maybe you wanna know a bit of convex optimization, and maybe you"
+2026.33,"wanna know a bit more about reinforcement learning,"
+2028.865,"know a ittle bit about planning,"
+2030.425,know a bit about lots of things.
+2031.97,"So, so I actually encourage you to take multiple classes I guess."
+2038.255,Cool. All right.
+2040.73,"Good. Um, if there are no more questions,"
+2044.51,let's go on to talk a bit about some machine learning.
+2051.4,"So um, all right,"
+2055.985,"so the remainder of this class,"
+2057.77,"what I'd like to do is um,"
+2060.185,"give a quick overview of uh,"
+2063.47,"you know, the major uh,"
+2065.33,"areas of machine learning and also um,"
+2070.34,"and, and also give you a sort of overview of the things you learn uh,"
+2074.135,in the next 10 weeks.
+2075.905,"So, you know, what is machine learning?"
+2078.86,"Right. It seems to be everywhere these days and it's useful for so many spaces,"
+2082.19,"and, and I think that um,"
+2084.815,"and uh, you know, and uh, uh,"
+2087.41,"and I, I feel like they uh- just to share with you my personal bias, right."
+2092.225,"You, you read the news about these people who are making"
+2094.61,so much money building learning algorithms. I think that's great.
+2098.03,"I hope, I hope all of you go make a lot of money"
+2100.19,"but the thing I find even more exciting is,"
+2102.53,is the meaningful work we could do.
+2104.405,"I think that, you know,"
+2105.905,"I think that every time there's a major technological disruption which there is now,"
+2109.445,"through machine learning um,"
+2111.095,it gives us an opportunity to remake large parts of the world and if we behave ethically
+2115.79,"in a principled way and use the superpowers of machine learning to do things that,"
+2120.545,"you know, helps people's lives, right."
+2122.21,"Maybe we could um, uh,"
+2124.19,"maybe you can improve the healthcare system,"
+2126.515,maybe you can improve give every child a personalized tutor.
+2130.52,"Uh, maybe we can make our democracy run better rather than make it run worse."
+2134.105,"But I think that um,"
+2135.725,the meaning I find in machine learning is that there's so many people that
+2140.12,"are so eager for us to go in and help them with these tools that um,"
+2144.455,"if, if you become good at these tools,"
+2147.02,"it gives you an opportunity to really remake some piece,"
+2150.41,some meaningful piece of the world.
+2152.33,"Uh, hopefully in a way that helps other people and makes the world kind of,"
+2156.275,makes the world a better place is very cliche in Silicon Valley.
+2159.26,"But, but I think, you know, with these tools,"
+2161.66,you actually have the power to do
+2163.43,"that and if you go make a ton of money, that's great too."
+2165.68,"But I find uh, much greater meaning of the work we could do."
+2168.875,"Um, it gives us a unique opportunity to do these things, right."
+2173.54,"But um, despite all the excitement of machine learning."
+2176.06,What is machine learning?
+2177.08,"So let me give you a couple um,"
+2179.705,definitions of machine learning.
+2181.97,"Um, Arthur Samuel whose claim to fame was uh,"
+2185.585,"building a checkers playing program,"
+2187.58,"uh, defined it as follows."
+2189.05,So field of study gives computers the ability to learn without being explicitly programmed.
+2192.5,"Um, and you know interesting- when,"
+2196.64,"when Arthur Samuel many,"
+2197.93,"many decades ago, built"
+2199.31,the checkers playing program.
+2201.155,"Uh, the debates of the day was can a computer ever do something"
+2206.045,"that it wasn't explicitly told to do? And Arthur Samuel uh, wrote a"
+2211.775,"checkers playing program, that through self play learns whether the patterns of uh,"
+2218.16,the checkerboard that are more likely to lead to win
+2220.63,"versus more likely to lead to a loss and learned uh,"
+2223.39,to be even better than Arthur Samuel the author himself at playing checkers.
+2229.16,"So back then, this was viewed as a remarkable result that a computer programmer,"
+2233.18,you know that could write a piece of
+2235.25,software to do something that the computer program himself
+2237.77,"could not do, right, because this program became better than Arthur Samuel um,"
+2242.48,"at, uh, uh, at,"
+2245.735,"at, at the task of playing checkers."
+2248.075,"Um, and I think today we um, are"
+2251.325,used to computers or machine learning algorithms outperforming humans on so many tasks.
+2257.435,"Uh, but it turns out that when you choose a narrow task like,"
+2261.425,"speech recognition on a certain type of task,"
+2263.66,you can maybe surpass human level performance.
+2265.94,"If you choose a narrow task like,"
+2267.545,"playing the game of Go,"
+2268.985,"than by throwing really,"
+2270.98,tons of computational power at it and self play.
+2273.725,"Uh, uh, uh you can have a computer,"
+2275.96,"you know become very good at,"
+2277.805,at these narrow tasks.
+2279.425,But this is maybe one of the first such examples in the history of computing. Um.
+2286.33,"Uh, and I think this is the one of the most widely cited, um, definitions right."
+2292.235,Gives computers the ability learn without being explicitly programmed.
+2295.56,"Um, my friend Tom Mitchell in his textbook,"
+2299.35,defined this as a Well-posed Learning Problem.
+2302.935,"Uh, a program is said to learn from"
+2305.45,"experience E with respect to task T and some performance measure P,"
+2308.72,"if its performance on T, as measured by P,"
+2310.19,improves with experience E. And I- I asked Tom this.
+2313.4,"I asked Tom if, um,"
+2314.9,he wrote this definition just because he wanted it to
+2317.78,"rhyme and [LAUGHTER] he, he, he, he, he did not say yes,"
+2321.515,"but I, I, I don't know."
+2323.51,"Um, but in this definition,"
+2326.06,"the experienced E. For- for the case of playing checkers,"
+2329.03,the experience E would be the experience of having
+2331.31,a checkers play- program played tons of games against itself.
+2334.55,"Uh, so computers lots of patients and"
+2337.1,sit there for days playing games or checkers against itself.
+2340.13,So that's experience E.
+2341.57,"The task T is the task of playing checkers,"
+2344.0,"the performance measure P maybe,"
+2345.71,"um, what's the chance of this program"
+2348.665,winning the next game of checkers it plays against the next opponent.
+2351.575,"Right. So- so we say that, ah,"
+2353.15,"this is a well-posed learning problem, learning the game of checkers."
+2356.88,"Now, within this, um,"
+2359.44,"set of ideas with machine learning,"
+2361.435,there are many different tools we use in machine learning.
+2365.77,"And so in the next 10 weeks,"
+2367.84,you'll learn about a variety of these different tools.
+2371.21,"Um, and so the first of them and the most widely used one is supervised learning."
+2376.46,"Um, let's see."
+2378.14,I wanna switch to the white board.
+2379.955,Do you guys know how to raise the screen?
+2383.09,[NOISE]
+2400.19,"So what I wanna do today is really go over some of the major categories of,"
+2404.09,"uh, Machine Learning Tools, and, uh,"
+2406.775,"and so what you learn in the next,"
+2409.37,"um, ah, by the end of this quarter."
+2412.745,"So the most widely used machine learning tool is,"
+2421.46,"uh, today is supervised learning."
+2423.185,"Actually, let me check, how, how many of you know what supervised learning is?"
+2425.96,"Ah, like two-thirds, half of you maybe."
+2429.68,"Okay cool. Let me, let me just briefly define it."
+2431.825,"Um, here's one example."
+2433.88,"Let's say, you have a database of"
+2437.705,"housing prices and so I'm gonna plot your dataset where on the horizontal axis,"
+2442.685,I'm- I'm gonna plot the size of the house in square feet.
+2447.065,"And on the vertical axis,"
+2448.88,we'll plot the price of the house.
+2451.04,"Right. And, um, maybe your dataset looks like that."
+2458.705,"Um, and so horizontal axis,"
+2460.685,I guess we'd call this X and vertical axis we'll call that Y.
+2465.635,"So, um, the supervised learning problem is given a dataset"
+2469.58,like this to find the relationship mapping from X to Y.
+2473.63,"And so, um, for example,"
+2476.06,let's say- let's say- let's say you have- let's
+2478.52,say you're fortunate enough to own a house in Palo Alto.
+2481.1,"Right. Ah, and you're trying to sell it,"
+2483.95,and you want to know how the price of the house.
+2485.825,"So maybe your house has a size,"
+2488.764,"you know, of that amount on the horizontal axis."
+2491.945,"I don't know, maybe this is 500 square feet,"
+2494.87,"1,000 square feet, 1,500 square feet."
+2497.72,"So your house is, ah, 1,250 square feet."
+2500.075,"Right. And you want to know,"
+2502.04,"you know, how do you price this house."
+2504.215,"So given this dataset,"
+2505.58,"one thing you can do is,"
+2506.93,"um, fit a straight line to it."
+2510.155,Right. And then you could estimate or predicts the price
+2514.01,"to be whatever value you read off on the, um, vertical axis."
+2518.765,"So in supervised learning,"
+2520.73,"you are given a dataset with, ah,"
+2524.375,"inputs X and labels Y,"
+2527.12,and your goal is to learn a mapping from X to Y.
+2532.805,"Right. Now, um, fitting a straight line to data is maybe the simplest possible."
+2538.085,"Maybe the simplest possible learning algorithm,"
+2540.53,maybe one of the simplest poss- learning algorithms.
+2543.695,"Um, given a dataset like this,"
+2545.6,"there are many possible ways to learn a mapping,"
+2548.15,to learn the function mapping from the input size to the estimated price.
+2552.53,"And so, um, maybe you wanna fit a quadratic function instead,"
+2556.055,maybe that actually fits the data a little bit better.
+2558.32,"And so how do you choose among different models will be, ah,"
+2560.825,either automatically or manual intervention will be-
+2563.63,will be something we'll spend a lot time talking about.
+2567.245,Now to give a little bit more.
+2569.75,"Um, to define a few more things."
+2571.91,This example is a problem called a regression problem.
+2577.33,And the term regression refers to
+2580.43,that the value y you're trying to predict is continuous.
+2584.6,"Right. Um, in contrast,"
+2587.075,here's a- here's a different type of problem.
+2590.21,"Um, so problem that some of my friends were working on,"
+2593.405,"and- and I'll simplify it was- was a healthcare problem, where, ah,"
+2596.945,"they were looking at, uh,"
+2598.565,"breast cancer or breast tumors,"
+2600.935,"um, and trying to decide if a tumor is benign or malignant."
+2605.21,"Right. So a tumor is a lump in a- in a woman's breast, um,"
+2609.17,"is- can be ma- malign,"
+2612.53,"or cancerous, um, or benign,"
+2614.695,"meaning you know, roughly it's not that harmful."
+2617.065,"And so if on the horizontal axis,"
+2620.379,you plot the size of a tumor.
+2623.035,"Um, and on the vertical axis,"
+2626.59,you plot is it malignant or not.
+2630.92,"Malignant means harmful, right."
+2632.87,"Um, and some tumors are harmful some are not."
+2636.395,"And so whether it is malignant or not,"
+2638.48,"takes only two values, 1 or 0."
+2643.54,"And so you may have a dataset, um, like that."
+2654.005,"Right. Ah, and given this,"
+2656.81,"can you learn a mapping from X to Y,"
+2659.3,"so that if a new patient walks into your office, uh,"
+2662.585,"walks in the doctor's office and the tumor size is,"
+2665.69,"you know say, this,"
+2667.445,"can the learning algorithm figure out from this data that it was probably,"
+2671.06,"well, based on this dataset,"
+2672.5,"looks like there's- there's a high chance that that tumor is, um, malignant."
+2677.84,"Um, so, ah, so this is an example of"
+2683.63,a classification problem and
+2689.48,the term classification refers to that Y here takes on a discrete number of variables.
+2695.03,"So for a regression problem,"
+2696.71,Y is a real number.
+2698.09,"I guess technically prices can be rounded off to the nearest dollar and cents,"
+2702.29,so prices aren't really real numbers.
+2704.465,"Um, you know that- because you'd probably not price it,"
+2707.9,how's it like Pi times 1 million or whatever.
+2710.3,"Ah, but, so, so- but for all practical purposes prices are continuous"
+2714.08,"so we call them housing price prediction to be a regression problem,"
+2717.89,"whereas if you have, ah, two values of possible output,"
+2720.2,"0 and 1, call it a classification problem."
+2722.225,"Um, if you have K discrete outputs so,"
+2725.855,"uh, if the tumor can be, uh,"
+2727.67,"malignant or if there are five types of cancer, right,"
+2731.24,"so you have one of five possible outputs,"
+2733.16,then that's also a classification problem.
+2735.125,If the output is discrete.
+2737.66,"Now, um, I wanna find a different way to visualize this dataset which is,"
+2744.425,"um, let me draw a line on top."
+2747.17,"And I'm just going to, you know,"
+2749.195,map all this data on the horizontal axis upward onto a line.
+2753.41,But let me show you what I'm gonna do.
+2755.81,I'm going to use a symbol O to denote.
+2766.68,"Right. Um, I hope what I did was clear."
+2770.365,"So I took the two sets of examples,"
+2772.51,"uh, the positive and negative examples."
+2774.13,"Positive example was this 1,"
+2775.675,negative example was 0.
+2777.115,"And I took all of these examples and- and kinda pushed them up onto a straight line,"
+2782.455,"and I use two symbols,"
+2784.3,I use O's to denote negative examples and I use crosses to denote positive examples.
+2789.625,"Okay. So this is just a different way of visualizing the same data, um,"
+2795.025,"by drawing it on the line and using, you know,"
+2797.38,"two symbols to denote the two discrete values 0 and 1, right?"
+2802.375,"So, um, it turns out that, uh, uh,"
+2806.44,"in both of these examples,"
+2807.864,"the input X was one-dimensional,"
+2810.085,it was a single real number.
+2811.57,"For most of the, um,"
+2813.49,"machine learning applications you work with,"
+2815.11,the input X will be multi-dimensional.
+2817.285,You won't be given just one number and asked to predict another number.
+2821.365,"Instead, you'll often be given, uh,"
+2824.02,multiple features and multiple numbers to predict another number.
+2827.05,"So for example, instead of just using a"
+2830.5,"tumor size to predict- to estimate malignancy- malignant versus benign tumors, um,"
+2836.95,you may instead have two features where one is
+2841.455,"tumor size and the second is age of the patient,"
+2846.359,"and be given a dataset, [NOISE]"
+2863.95,"right? And be given a dataset that looks like that, right?"
+2868.975,"Where now your task is, um,"
+2871.195,"given two input features,"
+2873.16,"so X is tumor size and age,"
+2875.5,"you know, like a two-dimensional vector,"
+2877.39,"um, and your task is given, uh,"
+2880.045,"these two input features,"
+2882.46,"um, to predict whether a given tumor is malignant or benign."
+2886.12,So if a new patient walks in a doctor's office
+2888.34,"and that the tumor size is here and the age is here,"
+2891.58,"so that point there,"
+2893.515,"then hopefully you can conclude that, you know,"
+2895.57,"this patient's tumor is probably benign, right?"
+2897.7,"Corresponding the O, that negative example."
+2900.7,"Um, and so what thing- one thing you'll learn, uh,"
+2903.88,"next week is a learning algorithm that can fit a straight line to the data as follows,"
+2910.405,"kinda like that, to separate out the positive and negative examples."
+2913.3,Separate out the O's and the crosses.
+2915.82,"And so next week, you'll learn about the logistic regression algorithm which,"
+2919.525,"um, which can do that."
+2921.505,"Okay? So, um, one of the most interesting things you'll learn about is, uh, let's see."
+2929.38,"So in this example,"
+2931.39,"I drew a dataset with two input features, um,"
+2934.48,when- so I have friends that actually worked on
+2937.21,"the breast cancer, uh, prediction problem,"
+2939.895,"and in practice you usually have a lot more than one or two features,"
+2943.84,"and usually you have so many features you can't plot them on the board, right?"
+2946.72,"And so for an actual breast cancer prediction problem,"
+2949.825,"my friends are working on this were- were using many other features such as,"
+2953.905,"don't worry about what these me- mean,"
+2955.18,"I guess clump thickness,"
+2956.59,"uh, you know, uniformity of cell size,"
+2964.78,"uniformity of cell shape, right?"
+2969.325,"Um, uh, adhesion, how well the cells stick together."
+2973.66,"Don't worry about what this means but, uh,"
+2975.76,"if you are actually doing this in a- in a actual medical application,"
+2979.3,there's a good chance that you'll be using a lot more features than just two.
+2982.84,"Uh, and this means that you actually can't plot this data,"
+2985.39,right? It's two high-dimensional.
+2986.71,"You can't plot things higher than 3-dimensional or maybe 4-dimensional,"
+2989.65,or something like that and so when we have lots of
+2991.54,features it's actually difficult to plot this data.
+2994.21,I'll come back to this in a second in learning theory.
+2996.76,"Um, and, uh, one of the things you'll learn about- so as we develop learning algorithms,"
+3003.06,"you'll learn how to build, um,"
+3005.25,regression algorithms or classification algorithms that can deal
+3007.92,with these relatively large number of features.
+3011.37,"One of the, uh,"
+3012.63,"most fascinating results you learn is that, um,"
+3015.48,[NOISE] you'll also learn about an algorithm called the Support Vector Machine which uses
+3020.19,"not one or two or three or 10 or 100 or a million input features,"
+3026.07,"but uses an infinite number of input features, right?"
+3030.375,"And so, so, so just to be clear, if in"
+3032.67,"this example the state of a patient were represents as one number,"
+3036.54,"you know, tumor size, uh,"
+3038.005,in this example we had two features.
+3039.9,"So the state of a patient were represented using two numbers,"
+3042.87,the tumor size and the age.
+3044.25,If you use this list of features maybe
+3046.14,a patient that's represented with five or six numbers.
+3048.765,"Uh, but there's an algorithm called the support vector machine that"
+3051.78,"allows you to use an infinite-dimensional vector,"
+3057.26,"um, to represent a patient."
+3060.96,"And, um, how do you deal with that"
+3064.05,"and how can the computer even store an infinite-dimensional vector, right?"
+3067.19,"I mean, you know, computer memory,"
+3069.3,"you can store one row number, two row numbers,"
+3071.79,but you can't store an infinite number of row numbers in
+3074.28,a computer without running out of memory or processor speed or whatever.
+3077.13,So so how do you do that?
+3078.93,"Uh, so when we talk about support vector machines"
+3081.875,"and specifically the technical method called kernels,"
+3085.13,"you'll learn how to build learning algorithms that work with, uh,"
+3088.7,"so that the infinitely long lists of features,"
+3091.415,infinitely long list of feature of- for for- which which- and you can
+3095.61,"imagine that if you have an infinitely long list of numbers to represent a patient,"
+3099.9,that might give you a lot of information about that patient and so that
+3103.77,"is one of the relatively effective learning algorithms to solve problems, okay?"
+3109.14,"Um, so that's supervised learning."
+3113.595,"And, you know, let me just,"
+3115.14,"um, uh, play a video,"
+3118.545,"um, show you a fun- slightly older example"
+3122.82,of supervised learning to give you a sense of what this means.
+3125.25,"[NOISE] But at the heart of supervised learning is the idea that during training, uh,"
+3132.0,"you are given inputs X together with the labels Y and you give it both at the same time,"
+3137.61,"and the job of your learning algorithm is to, uh,"
+3141.12,"find a mapping so that given a new X,"
+3144.075,you can map it to the most appropriate output Y.
+3147.36,"Um, so this is a very old video, uh, made by, um,"
+3151.56,"DA Pomerleau and we've known him for a long time as well, uh,"
+3153.6,using supervised learning for autonomous driving.
+3156.435,"Uh, this is not state of the art for autonomous driving anymore,"
+3159.225,but it actually does remarkably well.
+3161.28,"Oh, and, uh, um, as you, uh,"
+3163.725,"you hear a few technical terms like back-propagation,"
+3166.455,"you'll learn all those techniques in this class, uh,"
+3169.05,"and by the end of class, you'll either build"
+3171.075,a learning algorithm much more effective than what you see here.
+3173.52,But let's- let's- let's see this application.
+3178.58,"Uh, could you turn up the volume maybe have that?"
+3182.835,Are you guys getting volume audio?
+3184.95,[BACKGROUND]
+3187.89,"Oh, I see."
+3192.8,"All right, I'll narrate this."
+3195.06,[LAUGHTER]
+3197.07,"So I'll be using artificial neural network to drive this vehicle that,"
+3200.79,"uh, was built at Carnegie Mellon University, uh, many years ago."
+3204.36,"And what happens is, uh,"
+3206.175,"during training, it watches the human, um,"
+3209.58,"drive the vehicle and I think 10 times per second,"
+3212.655,"uh, it digitizes the image in front of the vehicle."
+3215.97,"And, um, so that's a picture taken by a front-facing camera."
+3221.49,"Um, and what it does is in order to collect labeled data,"
+3225.615,"the car while the human is driving it,"
+3227.94,"records both the image such as it's seeing here,"
+3231.435,"as well as, the steering direction that was chosen by human."
+3235.05,"So at the bottom here is the image turned to grayscale and lower res,"
+3239.145,"and, uh, on top,"
+3241.38,let me pause this for a second.
+3243.195,"Um, this is the driver direction,"
+3247.035,the font's kinda blurry but this text says driver direction.
+3249.9,"So this is the Y label,"
+3252.21,the label Y that the human driver chose.
+3255.81,"Um, and so the position of this white bar of"
+3258.99,this white blob shows how the human is choosing to steer the car.
+3263.22,"So in this, in this image,"
+3264.72,"the white blob is a little bit to the left of center so the human is,"
+3267.87,"you know, steering just a little bit to the left."
+3269.985,"Um, this second line here is the output of the neural network and initially,"
+3276.78,"the neural network doesn't know how to drive,"
+3279.105,"and so it's just outputting this white smear everywhere and it's saying,"
+3282.51,"""No, I don't know, do I drive left, right, center?"
+3284.64,"I don't know."" So it's outputting this gray blur everywhere."
+3287.925,"Um, and as the algorithm learns"
+3290.895,using the back-propagation learning algorithm
+3293.49,"or gradient descents which you'll learn about,"
+3295.455,"uh, you'll actually learn about gradient descent this Wednesday."
+3297.78,"Um, you see that"
+3299.43,"the neural network's outputs becomes less and less of this white smear,"
+3303.794,"this white blur but starts to, uh,"
+3305.91,"become sharper, um, and starts to mimic more"
+3310.14,accurately the human selected driving direction.
+3316.19,"Right. So this, um,"
+3318.735,is an example of supervised learning because
+3322.02,"the human driver demonstrates inputs X and outputs Y,"
+3326.22,"uh, meaning, uh, if you see this in front of the car steer like that so that's X and Y."
+3331.925,"And, uh, after the learning algorithm has learned,"
+3335.555,"um, you can then,"
+3337.97,"uh, well, he pushes a button,"
+3339.935,"takes the hands off the steering wheel, um,"
+3342.59,"[NOISE] and then it's using this neural network to drive itself, right?"
+3347.76,"Digitizing the image in front of the road,"
+3350.46,"taking this image and passing it through the learning algorithm,"
+3353.955,"through the trained neural network,"
+3355.53,"letting the neural networks select a steering direction,"
+3358.5,"uh, and then using a little motor to turn the wheel."
+3363.06,"Um, this is slightly more advanced version which has trained two separate models;"
+3367.44,"one for, I think, a two-lane road,"
+3369.255,one for a four-lane road.
+3370.74,"Uh, so that's the, um,"
+3372.75,"uh, so the second and third lines this is for a two-lane road,"
+3377.775,this is a four-lane road.
+3379.275,"And the arbitrator is, is another algorithm that tries to decide whether"
+3384.0,the two-lane or the four-lane road model is
+3385.98,"the more, more appropriate one for a particular given situation."
+3389.1,"Um, and so as Alvin is, excuse me a one-lane road or,"
+3394.2,"uh, a two-lane road."
+3395.43,"So, so, so it's driving from a one-lane road here,"
+3398.13,"uh, to another intersection,"
+3411.37,"um, the, uh the the algorithm realizes it should swi- switch over from,"
+3416.64,"um, I think I forget,"
+3418.845,I think the one-lane neural network to the- to
+3420.93,"the two-lane neural network [NOISE] one of these, right?"
+3424.2,All right. Um.
+3437.56,"Okay. Oh, oh, right."
+3440.42,Fine. We'll just see the final dramatic moment of
+3442.55,switching from a one-way road to a two-lane road.
+3444.53,[LAUGHTER]
+3457.0,All right.
+3459.0,"Um, uh, and I think,"
+3461.255,"you know, so this is just using supervised learning to- take as input,"
+3464.72,what's in front of the car to decide on the steering direction.
+3467.375,"This is not state of the art for how self-driving cars are built today,"
+3471.155,"but you know, you could do some things in some limited contexts."
+3474.68,"Uh, uh, and I think,"
+3476.33,"uh, in, in several weeks,"
+3477.98,you'll actually be able to build something that is more sophisticated than this.
+3481.775,"Right. Um, so after supervised learning,"
+3488.194,"uh, we wi- will- in this class we'll spend"
+3491.36,a bit of time talking about machine learning strategy.
+3494.36,"Also, well, I think on the class notes we annotate this as a learning theory."
+3499.235,"But what that means is, um,"
+3500.645,when I give you the tools to go out and apply learning algorithms effectively.
+3505.295,"And I think I've been fortunate to have,"
+3508.385,"uh, you know, to know a lot of, uh,"
+3510.92,"uh, I, I think that,"
+3513.425,"um, I've been fortunate to have,"
+3515.24,"you know, over the years constantly visited lots of great tech companies."
+3520.205,"Uh, uh, more than once that I've that- that I've been probably associated with, right?"
+3523.94,"But often, just to help friends out,"
+3525.965,"I visit various tech companies,"
+3527.93,"uh, whose products I'm sure are installed on your cell phone."
+3531.065,"Uh, but I often visit tech companies and you know,"
+3533.51,"talk to the machine learning teams and see what they're doing,"
+3535.775,and see if I can help them out.
+3537.125,And what I see is that there's a huge difference in
+3540.89,the effectiveness of how
+3542.975,two different teams could apply the exact same learning algorithm.
+3546.845,"All right? Uh, and I think that, um,"
+3549.41,what I've seen sadly is that
+3552.155,"sometimes there will be a team or even in some of the best tech companies, right?"
+3556.07,"The, the, the, the EV, AI companies, right?"
+3558.71,"And, and, and multiple of them,"
+3560.195,where you go talk to a team and they'll
+3562.91,tell you about something that they've been working on for six months.
+3565.685,"And then, you can quickly take a look at the data and,"
+3569.195,and hear that they're not- the algorithm isn't
+3571.79,"quite working and sometimes you can look at what they're doing,"
+3574.76,"and go yeah, you know,"
+3576.245,"I could have told you six months ago that this approach is never gonna work, right?"
+3579.89,"Um, and, um, what I find is that"
+3582.89,the most skilled machine learning practitioners are very strategic.
+3586.565,"By which I mean that your skill at deciding- um,"
+3590.585,"when you work on a machine learning project,"
+3592.115,you have- you- you have a lot of decisions to make.
+3594.23,Right? Do you collect more data?
+3596.24,Do you try a different learning algorithm?
+3598.43,"Uh, do you rent faster GPUs to train your learning algorithm for longer?"
+3601.865,"Or if you collect more data,"
+3603.17,what type of data do you collect?
+3604.58,"Or for- all of these architectural choices,"
+3606.53,"using neural networks for reference machine which is regression,"
+3608.975,which ones do you pick?
+3610.415,"Um, but there are a lot of decisions you need to"
+3613.52,make when building these learning algorithms.
+3616.655,"So one thing that's quite unique to the way we teach is, uh,"
+3620.795,"we want to help you become more systematic in driving machine learning as a,"
+3627.02,"as a systematic engineering discipline,"
+3629.0,"so that when one day when you are working on as machine learning project,"
+3631.655,you can efficiently figure out what to do next.
+3634.34,"Right? Um, and I sometimes make an analogy to how,"
+3637.67,"um, to, uh, uh,"
+3639.89,"to, to software engineering."
+3641.63,"Um, you know, like many years ago,"
+3644.12,"I had a friend, um,"
+3645.98,"that would debug code by compiling it and then,"
+3649.91,"um, uh, this friend would look for all of the syntax errors, right?"
+3653.54,"That, you know, C++ compiler outputs."
+3655.715,And they thought that the best way to eliminate the errors
+3659.225,is to delete all the lines of code with
+3661.07,syntax errors and that was [LAUGHTER] their first heuristic.
+3663.155,"So that did not go well, right?"
+3665.09,"Um, uh, it took me a while to persuade them to stop doing that."
+3668.84,"Uh, but, but, but so it turns out that, um,"
+3671.765,"when you run a learning algorithm,"
+3673.7,"you know, it almost never works the first time."
+3676.205,All right? It's this just life.
+3677.57,"Uh, uh, and, and the way you go about debugging the learning algorithm will"
+3680.93,"have a huge impact on your efficiency o- on,"
+3684.44,on how quickly you can build effective learning systems.
+3687.71,"And I think until now,"
+3689.375,"too much of the- of this process of, uh,"
+3692.075,"making your learning algorithms work well has been a black magic kind of process where,"
+3696.635,"you know, has worked on this for decades."
+3699.11,"So when you run something,"
+3700.67,"you don't know why it does not recognize it like, ""Hey,"
+3702.23,"what do I do and it says, Oh, yeah, do that."""
+3704.26,"And then, and then, because he's so experienced it works,"
+3706.93,"but I think, um,"
+3708.22,what we're trying to do with the discipline of machine learning
+3710.41,"is to evolve it from a black magic,"
+3712.87,"tribal knowledge, experience-based thing to a systematic engineering process."
+3717.935,"All right. And so um, later this quarter,"
+3720.56,"as we talk about machine learning strategy,"
+3722.96,we'll talk about learning theory.
+3724.04,"We'll try to systematically give you tools on how to,"
+3727.085,"um, uh, go about strategizing."
+3729.785,"Uh, so- so it can be very efficient in, um,"
+3732.695,"how you- how you yourself,"
+3734.15,"how you can lead a team to build an effective learning system,"
+3737.63,"because I don't want you to be one of those people that, you know,"
+3740.915,wastes six months on some direction that
+3743.42,maybe could have relatively quickly figured out it was not promising.
+3747.005,"Or maybe one last analogy,"
+3748.67,"if you- um, if you're used to optimizing code, right?"
+3752.06,"Making code run faster,"
+3753.695,I'm not sure if you have done that.
+3755.09,"Uh, uh, uh, less experienced software engineers,"
+3759.2,"who'll just dive in and optimize the code,"
+3761.06,"they try to make it run faster, right?"
+3762.44,Let's take the C++ and code in assembly or something.
+3765.47,But more experienced people will run a profiler to try to figure
+3768.92,out what part of code is actually the bottleneck and then just focus on changing on that.
+3772.745,"So, uh, one of the things we hope to do this quarter is, uh,"
+3776.12,"uh, convey to you some of these more systematic engineering principles."
+3780.575,All right. And yeah.
+3781.88,"Oh, and actually this is very interesting."
+3783.35,"This is a, uh, uh, yeah."
+3785.57,"Actually, I've been- I've been invited,"
+3787.91,so actually- so how many of you have heard the machine learning journey?
+3791.855,"Oh, just a few of you, interesting."
+3794.285,"Oh, so actually, so,"
+3795.785,"so- if any of you are interested,"
+3797.045,"um, just in my,"
+3799.22,"uh, spare time, uh,"
+3802.73,"I've been writing a book,"
+3804.515,"um, uh, to try to codify"
+3806.96,"systematic engineering principles for machine learning and so if you are,"
+3810.8,"uh, and so uh,"
+3812.42,"if you want the, you know,"
+3813.71,"free draft copy of the book,"
+3815.3,sign up for a mailing list here.
+3816.755,"I tend to just write stuff and put it on the Internet for free, yeah."
+3819.245,"So if you want a free draft copy of the book,"
+3822.305,"uh, uh, you know,"
+3824.075,"go to this website, uh,"
+3825.515,enter your e-mail address and the website will send you a copy of that book.
+3829.175,And I'll talk a little bit about these engineering principles as well.
+3831.65,"Okay. All right. So, uh,"
+3835.22,"so first subject, machine learning."
+3836.945,"Second subject, learning theory."
+3839.15,"Um, and, uh, the third major subject we'll talk about is, uh, deep learning, right?"
+3845.435,And so you have a lot of tools in machine learning and many of them are
+3849.38,"worth learning about and I use many different tools in machine learning,"
+3853.295,"you know, for many different applications."
+3855.425,There's one subset of machine learning that's really hot right now
+3858.17,"because it's just advancing very rapidly, which is deep learning."
+3861.245,And so we'll spend a little time talking about deep learning so that you can
+3865.205,understand the basics of how to train a neural network as well.
+3869.51,But I think that's where CS229
+3872.63,covers a much broader set of algorithms which are all useful.
+3876.155,"CS230, more narrowly covers just deep learning, right? Um."
+3882.61,"So, uh, other than deep learning slash"
+3885.84,"after- after deep learning slash neu- neural networks the other,"
+3889.365,"the four, four of the five major topics we'll cover will be on unsupervised learning."
+3895.53,"Um, so what is unsupervised learning?"
+3897.99,[NOISE]
+3906.779,"So you saw me draw a picture like this just now, right?"
+3912.135,"And this would be a classification problem like the tumor,"
+3914.82,"malignant, benign problems, this is a classification problem."
+3917.715,And that was a supervised learning problem because you have to learn
+3920.43,a function mapping from X to Y.
+3923.25,"Um, unsupervised learning would be if I give you a dataset like this with no labels."
+3929.325,"So you're just given inputs X and no Y,"
+3933.465,"and you're asked to find me something interesting in this data,"
+3936.795,"figure out, you know, interesting structure in this data."
+3940.2,"Um, and so in this dataset,"
+3941.73,"it looks like there are two clusters,"
+3943.83,and then unsupervised learning algorithm
+3946.11,"which we learned about called K-means clustering,"
+3948.18,"will discover this, um,"
+3949.995,this structure in the data.
+3952.62,"Um, other examples as well as learning, you know,"
+3955.425,"if- if you actually,"
+3956.67,Google News is a very interesting website.
+3958.62,"Sometimes I use it to look up, right?"
+3960.63,"Latest news, just this old example."
+3962.73,"But Google News everyday crawls or reads,"
+3966.51,"uh, uh, I don't know, uh, uh, many many thousands or"
+3970.17,"tens of thousands of news articles on the Internet and groups them together, right?"
+3974.25,"For example, there's a set of articles on the BP Oil Well spill, and it has,"
+3979.92,"uh, taken a lot of the articles written by different reporters and grouped them together."
+3985.395,"So you can, you know,"
+3986.43,"figure out that what BP,"
+3988.89,"uh, Macondo oil well, right?"
+3992.415,"That this is a CNN article about the oil well spill,"
+3995.43,there's a Guardian article about oil well spill and this is
+3997.47,an example of a clustering algorithm whereas taking
+4000.23,these different news sources and figuring out that these are
+4003.26,"all stories kind of about the same thing, right?"
+4007.385,"Um, and other examples of clustering,"
+4011.405,just getting data and figuring out what groups belong together.
+4016.25,"Um, a lot of work on, um, genetic data."
+4019.88,This is a visualization of- of genetic microarray data.
+4025.235,"Where given data like this,"
+4026.96,you can group individuals into different types
+4029.75,"of- into individuals of different, uh, characteristics, um,"
+4034.205,"or clustering algorithms grouping this type of data together is used to, um,"
+4039.455,"organize computing clusters, you know,"
+4041.945,figure out what machines workflows are more related
+4043.94,to each other and organize computing clusters appropriately.
+4046.235,So take a social network like LinkedIn or Facebook or
+4050.405,other social networks and figure out which are the groups of
+4053.36,"friends and which are the cohesive communities within a social network,"
+4057.11,"um, or market segmentation."
+4059.205,"Um, actually many companies I've worked with look at"
+4061.52,the customer database and cluster the users together.
+4064.19,"So you can say that looks like we're four types of users, you know,"
+4067.23,"looks like that, um,"
+4068.63,"there are the, uh,"
+4070.475,"young professionals looking to develop themselves,"
+4073.7,"there are the, you know,"
+4074.78,"soccer moms and soccer dads, there are this category and these categories."
+4078.11,"You can then market to the different market segments, um, separately."
+4082.07,"Uh, and- and actually,"
+4084.11,"many years ago my friend Andrew Moore, uh, uh,"
+4087.14,was using this type of data for
+4088.64,astronomical data analysis to group together galaxies. You have a question?
+4092.98,[inaudible].
+4097.85,Is unsupervised learning the same as learning clustering? No it's not.
+4099.93,So unsupervised learning broadly is the concept of using unlabeled data.
+4104.27,"So just X and finding interesting things about it, right?"
+4107.93,"Um, so, um, for example,"
+4110.385,"uh, actually here's- shoot."
+4113.015,This won't work with all of you will do this later in the cla- in the class I guess.
+4117.765,"Um, maybe I say we'll do this later."
+4119.975,"Cocktail party problem, um, uh,"
+4122.98,is another unsupervised learning problem.
+4126.74,"Reading the audio for this to explain this though,"
+4129.36,"um, let me think how to explain this."
+4132.045,"Um, the cocktail party problem and I'll try to"
+4134.81,do the demo when we can get all your work on this laptop.
+4137.795,"Is a problem where, um,"
+4139.78,if you have a noisy room and you stick
+4142.12,"mult- multiple microphones in the room and record overlapping voices,"
+4145.735,"um, so that no labels reaches multiple microphones,"
+4148.584,"an array of microphones,"
+4150.27,in a room of lots of people talking.
+4152.455,"Uh, how can you have the algorithm separate out the people's voices."
+4155.995,"So that's an unsupervised learning problem because,"
+4158.72,"um, there are no labels."
+4160.34,So you just stick microphones in the room and have it
+4162.23,"record different people's voices, overlapping voices,"
+4164.54,you have multiple users at the same time and then
+4166.76,have it try to separate out people's voices.
+4169.415,"And one of the programming exercises you do later is,"
+4172.925,"if we have, you know, five people talking."
+4175.625,"So each microphone records five people's overlapping voices, right?"
+4180.35,"Because, you know, each microphone hears five people at the same time."
+4183.425,How can you have an algorithm separate out
+4185.71,these voices so you get clean recordings of just one voice at a time.
+4189.345,So that's called the cocktail party problem and the algorithm you
+4192.14,"use to do this is called ICA, Independent Components Analysis."
+4195.26,"And that's something you implement in one of these later homework exercises, right?"
+4200.685,"Um, and there are other examples of unsupervised learning as well."
+4204.315,"Uh, the Internet has tons of unlabeled text data."
+4208.02,You just suck down data from the Internet.
+4210.32,"There are no labels necessarily but can you learn interesting things about language,"
+4215.48,"figure out what- figure out on,"
+4216.955,"I don't know, one of the best cited results recently was learning analogies,"
+4221.54,"like yeah, man is to woman as king is to queen, right?"
+4225.275,"Or a- what's a Tokyo is to Japan as Washington DC is to the United States, right?"
+4232.28,To learn analogies like that.
+4233.6,"It turns out you can learn analogies like that from unlabeled data,"
+4236.515,just from texts on the Internet.
+4237.77,So that's also unsupervised learning.
+4239.975,"Okay? Um, so after unsupervised learning,"
+4245.73,"oh, and unsupervised learning."
+4247.205,So you know machine learning is very useful today.
+4250.25,It turns out that most of the recent wave of
+4252.96,economic value created by machine learning is through supervised learning.
+4256.79,"Uh, but there are important use cases for unsupervised learning as well."
+4261.05,So I use them in my work occasionally.
+4263.475,"Uh, and is also a bleeding edge for a lot of exciting research."
+4267.575,And then the final topic.
+4269.435,"Finally, the five topics we covered."
+4271.07,"So talk about supervised learning, machine learning strategy,"
+4275.01,"deep learning, unsupervised learning,"
+4276.93,"and then the fifth one is reinforcement learning, is this."
+4279.71,"Which is, um, let's say, I give you the keys to Stanford autonomous helicopter."
+4284.48,"This helicopter is actually sitting in my office,"
+4286.39,and I'm trying to figure out how to get rid of it.
+4287.955,"Um, and I'll ask you to write a program to- to make it fly, right?"
+4292.425,So how do you do that?
+4293.685,"Um, so this is a video of a helicopter flying."
+4299.73,The audio is just a lot of helicopter noise. So that's not important.
+4303.6,But we'll zoom out the video.
+4305.51,"You see she's found in the sky, right?"
+4307.71,"There. So, um, you can use learning alg- that's kinda cool, right?"
+4311.32,[LAUGHTER] I was- I was the camera man that day.
+4313.5,"Um, but so you can use learning algorithms to get,"
+4316.46,"you know, robots to do pretty interesting things like this."
+4320.175,"Um, and it turns out that a good way to do this is through reinforcement learning."
+4325.49,So what's reinforcement learning?
+4327.29,"Um, it turns out that no one knows what's the optimal way to fly a helicopter, right?"
+4331.405,"If you fly a helicopter,"
+4332.645,you have two control sticks that you're moving.
+4335.465,"Um, but no one knows what's the optimal way to move the control stick."
+4338.895,"So the way you can get a helicopter fly itself is, um,"
+4342.285,"let the helicopter do whatever- think of this as training a dog, right?"
+4346.97,"You can't teach a dog the optimal way to behave,"
+4349.34,"but- actually, how many of you have had a pet dog or pet cat before?"
+4353.795,"Oh, not that many of you. This is fascinating."
+4356.49,Okay. So I had a pet dog when I was a kid
+4359.46,and my family made it my job to train the dog. So how do you train a dog?
+4363.225,"You let the dog do whatever it wants,"
+4365.27,"and then whenever it behaves well,"
+4367.005,"you go, ""Oh, good dog""."
+4368.705,"And when it misbehaves you go, ""bad dog""."
+4371.68,"[LAUGHTER] Um, and then over time,"
+4373.88,"the dog learns to do more of the good dog things and fewer of the bad dog things,"
+4378.08,"and so reinforcement learning is a bit like that, right?"
+4380.265,I don't know what's the optimal way to fly a helicopter.
+4382.55,"So you let the helicopter do whatever it wants and then whenever it flies well, you know,"
+4387.635,"does some maneuver you want, or flies accurately without jetting around too much,"
+4391.745,"you go, ""Oh, good helicopter""."
+4393.77,"[LAUGHTER] And when it crashes you go,"
+4395.82,"""bad helicopter"" and it's the job of"
+4398.24,the reinforcement learning algorithms to figure out how to
+4400.94,control it over time so as to get more of
+4403.305,the good helicopter things and fewer of the bad helicopter things.
+4406.65,"Um, and I think,"
+4408.65,"um, well, just one more video."
+4411.24,"Um, oh, yeah, that's interesting. All right."
+4418.83,"And so again given a robot like this,"
+4421.035,I actually don't know how to program a- actually
+4423.555,"a robot like this has a lot of joints, right?"
+4426.05,So how do you get a robot like this to climb over obstacles?
+4429.12,"So well, this is actually a robot dog,"
+4432.49,"so you can actually say,"
+4433.535,"""Good dog"" or ""Bad dog""."
+4434.99,"[LAUGHTER] By giving those signals,"
+4438.17,"called a reward signal, uh,"
+4439.965,"you can have a learning algorithm figure out by itself,"
+4442.845,"how to optimize the reward,"
+4444.42,"and therefore, [LAUGHTER] climb over these types of obstacles."
+4449.255,"Um, and I think recently,"
+4450.83,"the most famous applications of reinforcement learning happened for game-playing,"
+4454.955,"playing Atari games or playing,"
+4456.6,"you know, Game of Go, like AlphaGo."
+4458.88,I think that's a- I think that is a- game playing has made some remarkable stunts a
+4466.03,remarkable PR but I'm also equally excited or maybe
+4469.82,even more excited about the integrals and reinforcement learning is making
+4473.63,"into robotics applications, right?"
+4475.4,"So I think, um, I think- yeah,"
+4477.815,reinforcement learning has been proven to be fantastic at playing
+4480.32,"games, it's also getting- making real traction"
+4483.095,in optimizing robots and optimizing sort of logistic system and things like that.
+4488.81,"Um, so you learned about all these things."
+4493.295,"Um, last thing for today, uh,"
+4495.575,"I hope that you will start to, to meet people in the class,"
+4500.54,"make friends, find project partners and study groups,"
+4503.805,"and if you have any questions, [NOISE] you know,"
+4505.88,"dive on the Piazza, asking questions as you help others answer their questions."
+4509.825,"So let's break for today, and I look forward to seeing you on Wednesday."
+4513.68,Welcome to 229. 
+Title:,"Stanford CS229: Machine Learning Course, Lecture 1 - Andrew Ng (Autumn 2018)"

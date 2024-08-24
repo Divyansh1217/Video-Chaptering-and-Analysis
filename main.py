@@ -4,6 +4,10 @@ import pandas as pd
 from googleapiclient.discovery import build
 from youtube_transcript_api import YouTubeTranscriptApi
 import streamlit as st
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+ws=set(stopwords.words("English"))
+ws.update(["um", "uh", "actually","oh","yeah","ll",",","often","let","okay"," ll "])
 st.set_page_config(page_title="Project")
 st.title("Main")
 API_KEY= 'AIzaSyC3yFW6eJa5UWUb0dMZi2oBTx-Ad54JbBo'
@@ -19,6 +23,11 @@ def get_video_title(video_id):
     response = request.execute()
     title = response['items'][0]['snippet']['title'] if response['items'] else 'Unknown Title'
     return title
+def remove_stopwords(text):
+    words = word_tokenize(text)
+    filtered_words = [word for word in words if word.lower() not in ws]
+    return ' '.join(filtered_words)
+
 def get_video_transcript(video_id):
     try:
         transcript = YouTubeTranscriptApi.get_transcript(video_id)
@@ -35,7 +44,6 @@ def save_to_csv(title, transcript, filename):
     with open(filename, 'a', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['Title:', title])
-@st.cache_data(experimental_allow_widgets=True)
 def main1():
     data="https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfb"
     url = st.sidebar.text_input('Enter the YouTube video link: ',value=data,key='url_input')
@@ -62,6 +70,7 @@ file=main1()
 import pyautogui
 if file:  
     transcript_df = pd.read_csv(file)
+    transcript_df["text"]=transcript_df["text"].apply(remove_stopwords)
     st.write(transcript_df)
     st.session_state.transcript_df=transcript_df
     if st.sidebar.button("Reset"):
